@@ -8,7 +8,7 @@ pipeline {
             }
         }
 
-        stage('Dcoker build') {
+        stage('Docker build') {
             steps {
                 sh "docker images -a"
                 sh(script: """
